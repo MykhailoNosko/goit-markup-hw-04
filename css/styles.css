@@ -120,20 +120,8 @@ img {
   padding-bottom: 32px;
   padding-top: 32px;
 }
-.auth-nav-cont::before{ 
-  content: "";
-   display: block; 
- }
 
-.mail-svg{
-  width: 16px;
-  height: 12px;
-  margin-right: 0;
-  fill:var(--secondary-color);
-}
-.mail-svg:hover{
-  fill:var(--accent-color);
-}
+
 
 .auth-nav-cont{
   display: flex;
@@ -149,13 +137,11 @@ img {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
-  gap: 50px;
   margin-left: auto;
+  margin-right: 30px;
   
 }
-.auth-nav-phone{
-  
-}
+
 .auth-nav-cont:hover,
 .auth-nav-cont:focus,
 .auth-nav-phone:hover,
@@ -166,13 +152,23 @@ img {
   padding-bottom: 32px;
   padding-top: 32px;
 }
+.mail-svg{
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill:var(--secondary-color);
 
+}
+.mail-svg:hover,
+.mail-svg:focus {
+  fill:var(--accent-color);
+}
 
 /*hero section*/
 
 .hero{
- 
-  background-image: url(../images/hero.jpg);
+ max-width: 1600px;
+  background-image: url(../images/hero.jpg), linear-gradient(to bottom, #2F303A 40%, #2F303A);;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
@@ -233,6 +229,8 @@ img {
   background-color: var(--background-button);
   padding-top: 94px;
   padding-bottom: 94px;
+  max-width: 1600px;
+  margin: 0 auto;
   
 }
 
@@ -253,13 +251,7 @@ img {
 
 
 /* clients section*/
-.clients-main{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
- 
-}
+
 .clients-list{
 display: flex;
 gap: 30px;
@@ -278,7 +270,8 @@ justify-content: center;
 
 }
 
-.client-item:hover{
+.client-item:hover,
+.client-item:focus{
   border: 1px solid var(--accent-color);
 }
 .client-svg{
@@ -286,7 +279,8 @@ justify-content: center;
   height: 60px;
 }
 
-.client-svg:hover{
+.client-svg:hover,
+.client-svg:focus{
   fill: var(--accent-color);
 }
 /*button section portfolio page*/
@@ -331,7 +325,8 @@ justify-content: center;
   box-sizing: border-box;
   
 }
-.card-item:hover{
+.card-item:hover,
+.card-item:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .card-examp{
@@ -514,6 +509,7 @@ a{
   letter-spacing: 0.03em;
   background-color: var(--white-color);
   text-align: center;
+  margin-bottom: 16px;
    
 }
 
@@ -521,7 +517,15 @@ a{
 .footer{
   padding-top: 60px;
   padding-bottom: 60px;
+  max-width: 1600px;
+  margin:  0 auto;
 }
+
+.main-footer{
+  display: flex;
+  align-items: baseline;
+}
+
 .logo-footer{
   color: var(--white-color);
   font-family: "Raleway";
@@ -573,6 +577,7 @@ a{
 }
 .footer-item:not(:last-child){
   margin-bottom: 9px;
+  margin-right: 70px;
 }
 .footer-call{
   font-weight: 700;
@@ -581,12 +586,11 @@ a{
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color:var(--white-color);
+  margin-bottom: 20px;
 }
 
 .foot-social{
-  display: flex;
 justify-content: baseline;
-margin-bottom: 20px;
 }
 
 .footer-svg{
@@ -600,7 +604,7 @@ margin-bottom: 20px;
   fill: var(--white-color);
 }
 .footer-svg:hover,
-.staff-svg:focus{
+.footer-svg:focus{
   background-color:var(--accent-color);
   border-radius: 50%; 
 }
