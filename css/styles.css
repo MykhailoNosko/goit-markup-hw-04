@@ -166,13 +166,12 @@ img {
 
 .hero{
  max-width: 1600px;
-  background-image: url(../images/hero.jpg), linear-gradient(to bottom, #2F303A 40%, #2F303A);;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: #2f303a;
 
   
 
@@ -202,8 +201,11 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  width: 216px;
+  height: 50px;
   
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -227,7 +229,6 @@ img {
   background-color: var(--background-button);
   padding-top: 94px;
   padding-bottom: 94px;
-  max-width: 1600px;
   margin: 0 auto;
   
 }
@@ -268,12 +269,18 @@ justify-content: center;
 
 }
 
+.client-item:hover svg,
+.client-item:focus svg{
+  fill: var(--accent-color);
+}
+
 .client-item:hover,
 .client-item:focus{
   border: 1px solid var(--accent-color);
 }
+
 .client-svg{
-  width: 106px;
+  width: 116px;
   height: 60px;
 }
 
@@ -515,7 +522,6 @@ a{
 .footer{
   padding-top: 60px;
   padding-bottom: 60px;
-  max-width: 1600px;
   margin:  0 auto;
 }
 
